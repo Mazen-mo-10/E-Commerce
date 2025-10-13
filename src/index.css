@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -38,9 +37,14 @@
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(20 100% 50%) 100%);
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(0 72% 51%) 0%,
+      hsl(20 100% 50%) 100%
+    );
     --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --card-shadow-hover: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --card-shadow-hover: 0 10px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
   }
 
   .dark {
@@ -74,7 +78,8 @@
     --ring: 0 72% 51%;
 
     --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
-    --card-shadow-hover: 0 10px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    --card-shadow-hover: 0 10px 25px -5px rgb(0 0 0 / 0.3),
+      0 8px 10px -6px rgb(0 0 0 / 0.3);
   }
 }
 
@@ -82,11 +87,11 @@
   .hero-gradient {
     background: var(--hero-gradient);
   }
-  
+
   .card-shadow {
     box-shadow: var(--card-shadow);
   }
-  
+
   .card-shadow-hover {
     box-shadow: var(--card-shadow-hover);
   }
@@ -100,8 +105,13 @@
   body {
     @apply bg-background text-foreground antialiased;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
@@ -125,4 +135,35 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground/50;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 93%, 47%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0 72% 51%);
+  border-radius: 10px;
+  border: 2px solid hsl(0 0% 96%);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0 72% 41%);
+  transform: scale(1.05);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(0 72% 51%) hsl(0 0% 96%);
+}
+
+html {
+  scroll-behavior: smooth;
 }

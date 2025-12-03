@@ -48,52 +48,6 @@
 
 ---
 
-## 📊 Live Animated Stats
-<div align="center">
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; width:100%; max-width:1000px; margin: 1.25rem auto;">
-  <div align="center">
-    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="72" alt="sales" />
-    <h3>12k+</h3>
-    <p><b>Products Viewed</b></p>
-  </div>
-
-  <div align="center">
-    <img src="https://media.giphy.com/media/3o7aCSPqXE3J4/giphy.gif" width="72" alt="users" />
-    <h3>3.4k+</h3>
-    <p><b>Active Users (demo)</b></p>
-  </div>
-
-  <div align="center">
-    <img src="https://media.giphy.com/media/xUOxfjsW7vTqD2W8yE/giphy.gif" width="72" alt="orders" />
-    <h3>1.2k+</h3>
-    <p><b>Orders (simulated)</b></p>
-  </div>
-
-  <div align="center">
-    <img src="https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" width="72" alt="performance" />
-    <h3>90+</h3>
-    <p><b>Lighthouse Perf</b></p>
-  </div>
-</div>
-
-</div>
-
----
-
-## 🧭 Table of Contents
-- [About](#about)  
-- [Features](#features)  
-- [Tech & Tools](#tech--tools-expanded)  
-- [Screenshots & Animated Preview](#screenshots--animated-preview)  
-- [Installation](#installation)  
-- [Project Structure](#project-structure)  
-- [Code Snippets](#code-snippets)  
-- [CI / Deployment](#ci--deployment)  
-- [Contributing](#contributing)  
-- [License & Contact](#license--contact)
-
----
 
 ## 🧾 About
 This repository demonstrates a modern front-end e-commerce experience — ideal as a starter storefront or portfolio project. The code emphasizes readability, reusability and developer DX (Vite + TypeScript). Swap the mock data with a backend (Supabase/Firebase/Custom API) to make it production-ready.
@@ -128,3 +82,4 @@ This repository demonstrates a modern front-end e-commerce experience — ideal 
 - GitHub Actions, Vercel, Netlify, Cloudflare Pages
 
 </div>
+

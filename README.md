@@ -32,7 +32,7 @@
 ---
 
 ## 📝 One-line Pitch
-**Modern E-Commerce** — A polished, high-performance storefront demo built with **React + TypeScript + Vite + TailwindCSS**, with smooth animations, accessible components, and wallet-ready architecture for payments.
+**Modern E-Commerce** — A polished, high-performance storefront demo built with **React + TypeScript + Vite + TailwindCSS**, with smooth animations, accessible components, and wallet-ready architecture for payments, Live Link: https://e-commerce-delta-tan-20.vercel.app/ 
 
 ---
 
@@ -82,4 +82,5 @@ This repository demonstrates a modern front-end e-commerce experience — ideal 
 - GitHub Actions, Vercel, Netlify, Cloudflare Pages
 
 </div>
+
 
